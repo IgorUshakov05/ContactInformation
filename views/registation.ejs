@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/indexstyle1.css">
+  <title>Регистрация</title>
+</head>
+
+<body>
+  <form action="/registationForm" method="post">
+    <h3>
+      Регистрация
+    </h3>
+    <input required placeholder="Имя" type="text" name="nam" id="nam">
+    <input required placeholder="+798*** *** ** **" type="tel" name="num" id="num">
+    <input required placeholder="Пароль" type="password" name="pas" id="pas">
+    <input required placeholder="test@test.com" type="email" name="ema" id="ema">
+    <select required name="mea" id="mea">
+      <option value="Мужской">Мужской</option>
+      <option value="Женский">Женский</option>
+    </select>
+    <button type="submit">Запомнить</button>
+    <a href="/">Есть аккаунт</a>
+  </form>
+</body>
+
+</html>

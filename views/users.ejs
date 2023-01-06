@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/usersstyle.css">
+  <title>Все пользыватели</title>
+</head>
+<body>
+  <div class="main">
+    <%- include('./head.ejs') %>
+    <h1>
+      Пользыватели
+    </h1>
+    <ul>
+        <% for(var i=0; i<result.length; i++) {%>
+          <li>
+  
+           <a href="users/<%= result[i].Identifier%>"><%= i+1 %>) Имя: <%= result[i].name %></a>
+           <p><%= result[i].email%></p>
+           <p><%= result[i].meal%></p>
+          </li>
+          <% } %>
+        </ul>  
+      </div>
+</body>
+</html>
